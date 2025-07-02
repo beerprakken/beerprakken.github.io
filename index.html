@@ -2,187 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Beer Pieterjan Prakken | Academic Website</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
     body {
-      font-family: 'Roboto', sans-serif;
-      line-height: 1.6;
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 20px;
-      background: linear-gradient(to bottom right, #d9f1ff, #ffffff);
-      color: #001f33;
-      transition: background 0.4s ease-in-out;
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to bottom right, #a2d4f5, #f0faff);
+      background-image: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.5), transparent 70%),
+                        radial-gradient(circle at 70% 70%, rgba(240,248,255,0.5), transparent 70%);
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #003366;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      animation: fadeIn 2s ease-in;
     }
     header {
-      text-align: center;
-      padding-bottom: 20px;
-      animation: fadeIn 1s ease-in-out;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+      padding: 40px 20px;
     }
     h1 {
-      margin-bottom: 0;
-      color: #002f6c;
-      font-size: 2.5rem;
+      font-size: 3.2em;
+      margin-bottom: 0.3em;
     }
-    nav {
-      text-align: center;
-      margin: 20px 0;
-      background-color: #e1f5fe;
-      padding: 10px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    p {
+      font-size: 1.4em;
+      margin-bottom: 2em;
     }
     nav a {
-      margin: 0 12px;
+      display: inline-block;
+      margin: 0 15px;
       text-decoration: none;
-      color: #0066cc;
+      color: #005f99;
       font-weight: bold;
-      transition: color 0.3s, transform 0.3s;
+      padding: 10px 16px;
+      border-radius: 6px;
+      background-color: rgba(255, 255, 255, 0.6);
+      transition: all 0.3s ease;
     }
     nav a:hover {
-      color: #004c99;
-      transform: scale(1.1);
+      background-color: #d0ecff;
+      color: #002244;
     }
-    section {
-      margin-bottom: 40px;
-      background: rgba(255, 255, 255, 0.85);
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 50, 0.1);
-      transition: transform 0.3s ease;
-    }
-    section:hover {
-      transform: translateY(-3px);
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9em;
-      color: #555;
-      margin-top: 40px;
-    }
-    img.profile {
-      border-radius: 50%;
-      max-width: 160px;
-      margin: 0 auto 10px;
-      display: block;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s;
-    }
-    img.profile:hover {
-      transform: rotate(-2deg) scale(1.05);
-    }
-    .gallery {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-top: 20px;
-    }
-    .gallery img {
-      width: 280px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-      transition: transform 0.3s;
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="profile_photo.jpg" alt="Beer Pieterjan Prakken" class="profile" />
     <h1>Beer Pieterjan Prakken</h1>
-    <p>PhD Candidate in Philosophy | University of Groningen</p>
+    <p>PhD Candidate in Philosophy · Predoctoral Fellow at Yale · Guest Researcher at Utrecht University</p>
+    <nav>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="engagement.html">Engagement</a>
+      <a href="media.html">Media</a>
+      <a href="cv.html">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#teaching">Teaching</a>
-    <a href="#engagement">Engagement</a>
-    <a href="#media">Media</a>
-    <a href="#cv">CV</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about">
-    <h2>About</h2>
-    <p>I am a PhD candidate in philosophy at the University of Groningen, researching the intersection of play, humor, and politics, as well as conducting historical research on urban spaces and black washerwomen in Antebellum New Orleans.</p>
-  </section>
-
-  <section id="research">
-    <h2>Research & Publications</h2>
-    <ul>
-      <li><strong>2025 (June)</strong> — “Affective Shifts in Political Comedy” (<a href="https://doi.org/10.1080/2040610X.2025.2512676" target="_blank">link</a>)</li>
-      <li><strong>2025</strong> — “Playful Transgression Theory of Humor and Laughter” (<a href="https://doi.org/10.1515/phhumyb-2025-0001" target="_blank">link</a>)</li>
-      <li><strong>2025 (forthcoming)</strong> — “Dark Play, Trolling, and Absorption in Trumpism”</li>
-      <li><strong>2025 (forthcoming)</strong> — “Humorous Political Rhetoric: A U.S. Case Study,” in <em>The European Journal of Humour Research</em></li>
-      <li><strong>2025 (forthcoming)</strong> — “Black Resistance, Struggle and Agency on Canal Street’s Neutral Ground,” in <em>Louisiana History</em></li>
-      <li><strong>2022 (Dec)</strong> — “Het verdeelde nut van Geschiedenis,” Groniek</li>
-    </ul>
-  </section>
-
-  <section id="teaching">
-    <h2>Teaching</h2>
-    <ul>
-      <li>“Philosophical Thinking” (BA, 2024-2025)</li>
-      <li>“Minor Rhetoric” (BA, 2024-2025)</li>
-      <li>BA Thesis Supervisor (2024-2025)</li>
-      <li>Guest Lecturer “Philosophy of Emotions” (BA Honors, 2023-2024)</li>
-      <li>Guest Lecturer “Introduction to Ethics” (BA, 2023-2024)</li>
-    </ul>
-  </section>
-
-  <section id="engagement">
-    <h2>Public Engagement</h2>
-    <ul>
-      <li><strong>2024 (Nov)</strong> — Public essay: “How humour and ‘dark play’ radicalise Trump’s voter base” (<a href="https://theconversation.com/how-humour-and-dark-play-radicalise-trumps-voter-base-242453" target="_blank">The Conversation</a>)</li>
-      <li><strong>2025 (Apr)</strong> — Essay: “Cynisme en humor in de democratie” (<a href="https://www.montesquieu-instituut.nl/id/vmmkaouritng/nieuws/cynisme_en_humor_in_de_democratie_het?colctx=vllzft76lfmu" target="_blank">Montesquieu Instituut</a>)</li>
-      <li><strong>2024 (Jul)</strong> — Public essay: “Politiek duister spel” on Bij Nader Inzien</li>
-      <li><strong>2024 (Dec)</strong> — Interview in <em>Trouw</em>: “Trump verpakt extreme ideeën in grappen”</li>
-      <li><strong>2025 (Jun)</strong> — Interview in <em>Trouw</em>: “Trumps politiek heeft veel weg van showworstelen”</li>
-      <li><strong>2024 (Dec)</strong> — Interview in <em>Volkskrant</em>: “Het politieke jaar in memes”</li>
-      <li><strong>2024 (Apr)</strong> — Public lecture at <strong>Night of Philosophy</strong>, Forum Groningen</li>
-      <li><strong>2024 (Oct)</strong> — Talk at <strong>Brainwash Festival</strong>, De Balie, Amsterdam</li>
-    </ul>
-  </section>
-
-  <section id="media">
-    <h2>Media Appearances & Speeches</h2>
-    <ul>
-      <li><a href="https://www.youtube.com/watch?v=-ZDhFBK1nQM&t=1s" target="_blank">Speech at Brainwash Festival, Amsterdam</a></li>
-      <li><a href="https://www.nporadio1.nl/nieuws/politiek/47f6b6fc-2377-4d23-9747-2614ba2422c3/politieke-figuren-zetten-humor-en-spel-in-als-politiek-wapen-verlicht-de-boodschap-heel-erg" target="_blank">Radio Interview NPO Radio 1</a></li>
-    </ul>
-    <div class="gallery">
-      <img src="brainwash_festival.jpg" alt="Brainwash Festival Presentation" />
-      <img src="profile_photo.jpg" alt="Beer Prakken Speaking" />
-    </div>
-  </section>
-
-  <section id="cv">
-    <h2>Curriculum Vitae</h2>
-    <p><a href="Academic%20CV%20beer%20prakken%20July%202025.pdf" target="_blank">Download CV (PDF)</a></p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:b.p.prakken@rug.nl">b.p.prakken@rug.nl</a></p>
-    <p>University of Groningen, Netherlands</p>
-    <p><a href="https://www.linkedin.com/in/beer-prakken-711673178/" target="_blank">LinkedIn</a> | <a href="https://orcid.org/0009-0008-0533-5391" target="_blank">ORCID</a></p>
-  </section>
-
-  <footer>
-    <p>© Beer Pieterjan Prakken | 2025</p>
-  </footer>
-</body>
-</html>
